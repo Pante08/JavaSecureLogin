@@ -1,102 +1,109 @@
-Login System
+# 🔐 Java Login System
 
-A straightforward Java-based login system with a restricted number of login attempts and a username and password input field. 
+A simple **Java login system** that allows users to create their own username and password, then log in using those credentials.
 
-Features
-Authentication with a username and password
-Java Scanner input from the user
-Restricted login attempts
-shows the accuracy of the login information.
-stops logging in after a certain amount of unsuccessful attempts.
-Java project suitable for beginners 
+The program gives the user **3 login attempts** before their account is locked.
 
-Technologies Employed
-Java
-Eclipse IDE
-Scanner
-If/else clauses
-Comparison operators and variables 
+## 📌 Features
 
-How It Operates
-The software asks the user username username username.
-The program asks for their password.
-The stored login credentials and the entered data are compared.
-The user is given another chance if the information is inaccurate. 
+- Create a custom username
+- Create a custom password
+- Login using the created credentials
+- 3 login attempts
+- Displays remaining attempts
+- Locks the account after 3 failed attempts
+- Displays a welcome message after a successful login
 
-Example
-Enter username:
-admin
+## 🛠️ Technologies Used
 
-Enter password:
-1234
+- **Java**
+- `Scanner`
+- `while` loops
+- `if / else` statements
+- `String` variables
+- `.equals()` for comparing strings
+- `break` statements
 
-Login successful!
+## ▶️ How It Works
 
-If the credentials are incorrect:
+### 1. Create an Account
 
+When the program starts, the user creates their username and password.
+
+```text
+===== CREATE ACCOUNT =====
+
+Create a username: admin
+Create a password: 12345
+
+Account created successfully!
+```
+
+### 2. Login
+
+The user then enters the username and password they created.
+
+```text
+===== LOGIN =====
+
+Enter username: admin
+Enter password: 12345
+
+Login Successful!
+Welcome, admin!
+```
+
+### 3. Incorrect Login
+
+If the credentials are incorrect, the program decreases the number of remaining attempts.
+
+```text
 Incorrect username or password.
 Attempts remaining: 2
+```
 
-After too many failed attempts:
+### 4. Account Lock
 
-Too many failed attempts.
-Access denied.
+After 3 incorrect attempts, the account is locked.
 
-Login System README
-Login System
-A simple Java-based login system that allows users to enter a username and password and provides a limited number of login attempts.
-Features
-Username and password authentication
-User input using Java Scanner
-Limited login attempts
-Displays whether login information is correct or incorrect
-Prevents login after the maximum number of failed attempts
-Beginner-friendly Java project
-Technologies Used
-Java
-Eclipse IDE
-Scanner
-if/else statements
-Variables and comparison operators
-How It Works
-The program asks the user to enter their username.
-The program asks for their password.
-The entered information is compared with the stored login credentials.
-If the information is correct, the user successfully logs in.
-If the information is incorrect, the user is given another attempt.
-After the maximum number of failed attempts, access is denied.
-Example
-Enter username:
-admin
-
-Enter password:
-1234
-
-Login successful!
-If the credentials are incorrect:
+```text
 Incorrect username or password.
-Attempts remaining: 2
-After too many failed attempts:
-Too many failed attempts.
-Access denied.
-Purpose
-I created this project to practice fundamental Java programming concepts, including:
-User input
-Variables
-Conditional statements
-Loops
-String comparison
-Basic authentication logic
-Future Improvements
-Possible improvements for future versions include:
-Allowing users to create accounts
-Storing multiple usernames and passwords
-Adding password masking
-Storing login information in a file or database
-Adding stronger password requirements
-Implementing password hashing
-Adding account lockout functionality
-Author
-Pantelis
-This project was created as part of my journey learning Java and cybersecurity fundamentals.
+Account locked.
+```
 
+## 📂 Project Structure
+
+```text
+LoginSystem/
+└── LoginSystem.java
+```
+
+## 🚀 Future Improvements
+
+Some features I plan to add in future versions:
+
+- Save accounts to a file
+- Allow users to create multiple accounts
+- Password masking
+- Password requirements
+- Username validation
+- Account recovery
+- More advanced authentication/security features
+
+## 🎯 What I Learned
+
+This project helped me practice the fundamentals of Java, including:
+
+- Taking user input with `Scanner`
+- Working with variables
+- Comparing Strings with `.equals()`
+- Using conditional statements
+- Creating loops
+- Tracking login attempts
+- Controlling program flow with `break`
+
+## 👨‍💻 Author
+
+**Pantelis**
+
+Beginner Java project created as part of my programming practice.
